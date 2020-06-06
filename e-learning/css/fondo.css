@@ -1,0 +1,10 @@
+ol li h3{
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #000;
+	font-weight: bold;
+}
+
+ol{
+	text-align: left;
+}

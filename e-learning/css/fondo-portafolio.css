@@ -1,0 +1,71 @@
+@charset utf-8;
+
+body{
+	height: 900px;
+}
+@media only screen and (max-width: 320px) and (min-width: 5px){
+	#main-logo{
+		width: 220px;
+		text-align: left;
+	}
+	.inicio #logoSAE{
+		margin-top: 50%;
+	}
+}
+
+/* Smartphones (portrit and landscape) */
+@media only screen and (min-width: 321px) and (max-width: 480px){
+	#main-logo{
+		width: 220px;
+	}
+	.inicio #logoSAE{
+		margin-top: 50%;
+	}
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-width: 321px) {
+	#main-logo{
+		width: 220px;
+	}
+}
+
+/* Smartphones (portrait) */
+@media only screen and (max-width: 320px) {
+	#main-logo{
+		width: 220px;
+		text-align: left;
+	}
+	.inicio #logoSAE{
+		margin-top: 50%;
+	}
+}
+.inicio{
+	height: 100%;
+	text-align: center;
+}
+.img{
+	width: 140px;
+	height: 140px;
+	cursor: pointer;
+}
+h2{
+	font-size: 40px;
+	font-size: 4.0rem;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+	text-transform: uppercase;
+}
+h3{
+	font-size: 30px;
+	font-size: 3.0rem;
+	font-weight: bold;
+	text-align: center;
+}
+p{
+	color: #000;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+}

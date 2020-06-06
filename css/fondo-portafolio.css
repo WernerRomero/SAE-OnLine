@@ -1,0 +1,42 @@
+@charset utf-8;
+
+body{
+	height: 810px;
+}
+.inicio{
+	margin-top: 70px;
+	height: 100%;
+	text-align: center;
+}
+.img{
+	width: 140px;
+	height: 140px;
+	cursor: pointer;
+}
+h2{
+	font-size: 40px;
+	font-size: 4.0rem;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+	text-transform: uppercase;
+}
+h3{
+	font-size: 30px;
+	font-size: 3.0rem;
+	font-weight: bold;
+	text-align: center;
+}
+p{
+	color: #000;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.apps{
+	margin-top: 120px;
+	margin-left: 25%;
+	display: none;
+	position: absolute;
+}

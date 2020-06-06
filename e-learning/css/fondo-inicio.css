@@ -1,0 +1,113 @@
+@charset utf-8;
+
+.inicio{
+	margin-top: 80px;
+	height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: -80px;
+}
+.inicio #logoSAE{
+	width: 80%;
+	height: 350px;
+}
+
+.inicio h2{
+	color: #fff;
+	font-size: 48px;
+	font-weight: bold;
+} .inicio h4{
+	color: #fff;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+
+/* 320 */
+@media only screen and (max-width: 320px) and (min-width: 5px){
+	#main-logo{
+		width: 220px;
+		text-align: left;
+	}
+}
+
+/* Smartphones (portrit and landscape) */
+@media only screen and (min-width: 321px) and (max-width: 480px){
+	#main-logo{
+		width: 220px;
+	}
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-width: 321px) {
+	#main-logo{
+		width: 220px;
+	}
+}
+
+/* Smartphones (portrait) */
+@media only screen and (max-width: 320px) {
+	#main-logo{
+		width: 220px;
+		text-align: left;
+	}
+}
+
+/* 481px - 767px */
+@media only screen and (min-width: 481px) and (max-width: 767px){
+	.inicio #logoSAE{
+		width: 85%;
+		height: 85%;
+	}
+}
+
+/* iPads (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	.inicio #logoSAE{
+		height: 450px;
+	}
+}
+
+/* iPads (landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	
+}
+
+/* iPads (portrait) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	.inicio #logoSAE{
+		height: 450px;
+	}
+}
+
+/* 1025px - 1223px */
+@media only screen and (min-width: 1025px) and (max-width: 1223px){
+	.inicio #logoSAE{
+		height: 450px;
+		width: 75%;
+	}
+}
+
+/* Desktops and laptops */
+@media only screen and (min-width: 1224px) {
+	.inicio{
+		width: 100%;
+	}
+	.inicio #logoSAE{
+		margin-top: -5px;
+		width: 47%;
+		height: 47%;
+	}
+}
+
+/* large screens */
+@media only screen and (min-width: 1824px) {
+	.inicio{
+		width: 100%;
+	}	
+	.inicio #logoSAE{
+		margin-top: -5px;
+		width: 47%;
+		height: 47%
+	}
+}
