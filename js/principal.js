@@ -1,5 +1,5 @@
 $(document).ready(function(e) {
-    $("#divlogin, #divreg").draggable();
+    $("#divlogin").draggable();
 });
 
 function mostrar( form ){
@@ -17,7 +17,17 @@ function ajax_datos(url2, datos, elementoHTML){
 		data	: datos,
 		type	: "POST",
 		success	: function(respuesta){
-			$(elementoHTML).html(respuesta);
+			if (respuesta == "true") {
+				var redic = function () {
+					document.location.href = 'e-learning';
+				}
+
+				setInterval(redic, 500);
+			} else if (respuesta == "false") {
+				alert("Error! Nombre mayor a 3 digitos");
+			} else {
+				alert("Error! Dato Vacio");
+			}
 		},
 		error	: function(e){
 			alert("Error...!"+e);
@@ -25,8 +35,12 @@ function ajax_datos(url2, datos, elementoHTML){
 	});
 }
 
-function reg_user(){
-	var data = $('#frmreg_user').serialize();
-	ajax_datos('php/registro.php', data, '#divregform');
-	alert("Registro Efectuado con exito...!");
+function login() {
+	var data = $('#frmlogin').serialize();
+	ajax_datos('php/verificar.php', data, '#login');
+	limpiar();
+}
+
+function limpiar() {
+	$("#frmlogin input[type='text']").val('');
 }
