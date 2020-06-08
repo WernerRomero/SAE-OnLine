@@ -14,7 +14,6 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div id="divlogin" class="apps"> <?php include('login.php'); ?> </div>
-                    <div id="divreg"   class="apps"> <?php include('reg_user.php') ?> </div>
                     <img id="logoSAE" src="img/logo.png" alt="LogoSAE">
                 </div>
             </div>

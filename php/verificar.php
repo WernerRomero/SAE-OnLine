@@ -1,29 +1,20 @@
 <?php 
 	session_start();
-	include("config.php");
+	
+	$usuario = isset($_POST['txtUsername']) ? $_POST['txtUsername'] : '';
 
-	if(isset($_POST['txtUsername']) && !empty($_POST['txtUsername']) && isset($_POST['txtPassword']) && !empty($_POST['txtPassword']) ){
-		$sel = mysqli_query($link, 
-			"select nombre, apellido, usuario, password, tipo_usuario
-			from usuario
-			where usuario='$_POST[txtUsername]' ")or die(mysqli_error($link));
-		$session = mysqli_fetch_assoc($sel);
+	if (strlen($usuario) > 3) {
+		$_SESSION['usuario'] = $_POST['txtUsername'];
+		echo 'true';
+		
 
-		if($_POST['txtPassword']==$session['password']){
-			
-			if($session['tipo_usuario']=='user'){
-				$_SESSION['usuario']=$_POST['txtUsername'];
-				header('Location: ../e-learning/');
-			}else{
-				$_SESSION['usuario']=$_POST['txtUsername'];
-				header('Location: ../e-learning/tema');
-			}
-		}else{
-			//echo "<p>Combinacion Erronea</p>";
-			header('Location: ../index.php');
-		}
-	}else{
-		// echo "<p>Debes de llenar ambos Campos</p>";	
-		header('Location: ../index.php');
+		//echo '<p class="accep">Acceptar</p>';
+	} elseif (strlen($usuario <= 3)) {
+		echo 'false';
+		//echo '<p class="error">Error! Nombre mayor a 3 digitos</p>';
+	} else {
+		echo 'algo';
+		//echo '<p class="error">Error! Dato Vacio</p>';
 	}
+	
 ?>
