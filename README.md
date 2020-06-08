@@ -2,7 +2,7 @@
 
 Este proyecto consistia en llevar todo lo aprendido en Clase de Eléctronica a la web, para que los alumnos que esten cursando esta materia puedan ver y repasar el contenido de la clase.
 
-Puedes probar este proyecto en la siguiente direccion [Falta la URL]()
+Puedes probar este proyecto en la siguiente direccion [http://wernerromero.260mb.net/SAE-OnLine/](http://wernerromero.260mb.net/SAE-OnLine/)
 
 A continuación tambien puedes observar una imagenes del proyecto
 
